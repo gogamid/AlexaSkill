@@ -29,3 +29,24 @@ Different Types of Skill Models
     - this services incoming requests
     - define interaction model
 
+## Custom Skill Major Components
+
+- Interaction model
+  - intents
+    - specific task to be done
+    - book flight, create a hotel reservation 
+  - utterances
+    - spoken phrase that mapped to an intent
+    - "turn on the kitchen exhaust fan"
+  - slots
+    - user input values needed to fulfill an intent
+    - departure and arrival date for book a flight
+  - dialog
+    - steps in a multi-turn conversation (if else)
+    - to get all information from user
+- Skill Handler
+  - backend service, code that handles servicing your intents
+  - Lambda function or self-hosted HTTPS service
+  - processing financial transaction for ordering pizza
+  - python, Node.js, Java
+  - host in AWS/own server
