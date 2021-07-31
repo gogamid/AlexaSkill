@@ -50,3 +50,41 @@ Different Types of Skill Models
   - processing financial transaction for ordering pizza
   - python, Node.js, Java
   - host in AWS/own server
+
+## My Calculator
+
+- operations
+  - Addition, Subtraction, Multiplication, Division
+    - "Alexa, ask my calculator to add 5 and 8"
+    - "Alexa, aks my calculator to subtract 15 and 32"
+    - "Alexa, tell my calculator to divide 54 and 8"
+    - "Alexa, aks my calculator to multiply 15 and 32"
+
+## Agenda
+
+- design
+- configuration
+- code skill handler
+- deploy lambda function
+- test on browser/on actual device
+
+## Deconstruction My Calculator
+
+- Intents: Addition, Subtraction, Multiplication, Division
+- Utterances: 
+  - **Additon**: "Add two numbers", "Perform addition", "10 plus 35", "Add 10 and 35"
+  - **Subtraction**: "Subtract two numbers", "Perform subtraction", "24 take away 35", "38 minus 15", "Subtract 29 from 56"
+  - **Division**: "Divide two numbers"
+"Perform division",
+"24 divided by 3",
+"Divide 100 by 20"
+  - **Multiplication**: "Multiply two numbers"
+,"Perform multiplication"
+,"Multiply 24 and 4"
+,"Multiply 24 by 4"
+- Slots: First number, Second Number
+- Invoking the Skill:
+  - "Alexa, open my calculator"
+  - "Alexa, tell my calculator to multiply 23 by 5"
+  - "Alexa, ask my calculator to subtract 9 from 34"
+  - "Alexa, ask my calculator to perform division"
